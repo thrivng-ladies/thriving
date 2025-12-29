@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import React from "react";
 
 export default function PartnersTestimonials() {
@@ -15,10 +16,14 @@ export default function PartnersTestimonials() {
                     </div>
                     <div className="flex gap-2">
                         <button className="h-12 w-12 rounded-full border border-border-light dark:border-gray-700 flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-text-secondary dark:text-gray-300">
-                            <span className="material-symbols-outlined">arrow_back</span>
+                            <span className="material-symbols-outlined">
+                                <Icon icon="mdi:chevron-left" width={24} height={24} />
+                            </span>
                         </button>
                         <button className="h-12 w-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg hover:bg-primary-dark transition-colors">
-                            <span className="material-symbols-outlined">arrow_forward</span>
+                            <span className="material-symbols-outlined">
+                                <Icon icon="mdi:chevron-right" width={24} height={24} />
+                            </span>
                         </button>
                     </div>
                 </div>
@@ -39,7 +44,7 @@ export default function PartnersTestimonials() {
                         <div className="absolute inset-0 flex items-center justify-center">
                             <button className="group/btn relative flex items-center justify-center h-20 w-20 bg-white/20 backdrop-blur-md border border-white/40 rounded-full transition-all hover:scale-110">
                                 <span className="material-symbols-outlined text-4xl text-white ml-1">
-                                    play_arrow
+                                    <Icon icon="mdi:play" width={24} height={24} />
                                 </span>
                                 <div className="absolute inset-0 rounded-full border border-white/40 animate-[ping_2s_ease-in-out_infinite]"></div>
                             </button>
@@ -67,12 +72,12 @@ export default function PartnersTestimonials() {
                     </div>
                     <div className="lg:col-span-5 flex flex-col gap-6 min-h-[500px]">
                         <div className="flex-1 bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-sm border border-border-light dark:border-gray-700 hover:shadow-xl transition-shadow duration-300 flex flex-col justify-center">
-                            <div className="flex text-accent mb-4">
-                                <span className="material-symbols-outlined text-xl fill">star</span>
-                                <span className="material-symbols-outlined text-xl fill">star</span>
-                                <span className="material-symbols-outlined text-xl fill">star</span>
-                                <span className="material-symbols-outlined text-xl fill">star</span>
-                                <span className="material-symbols-outlined text-xl fill">star</span>
+                            <div className="flex text-yellow-500 mb-4">
+                                {[...Array(5)].map((_, i) => (
+                                    <span key={i} className="text-xl">
+                                        <Icon icon="mdi:star" width={24} height={24} />
+                                    </span>
+                                ))}
                             </div>
                             <p className="text-text-main dark:text-gray-200 font-medium text-lg mb-6">
                                 "The transparency and data-driven approach gave our board the
@@ -97,8 +102,8 @@ export default function PartnersTestimonials() {
                         <div className="flex-1 bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-sm border border-border-light dark:border-gray-700 hover:shadow-xl transition-shadow duration-300 flex flex-col justify-center">
                             <div className="flex justify-between items-start mb-4">
                                 <div className="p-2 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-primary">
-                                    <span className="material-symbols-outlined text-2xl">
-                                        format_quote
+                                    <span className="text-yellow-500 text-2xl">
+                                        <Icon icon="mdi:format-quote-open" width={24} height={24} />
                                     </span>
                                 </div>
                             </div>

@@ -75,7 +75,7 @@ export default function CoreMission() {
                                 </div>
                                 <div className="p-6 bg-primary rounded-2xl text-white shadow-lg flex flex-col justify-center items-center text-center">
                                     <span className="material-symbols-outlined text-4xl mb-2">
-                                        trending_up
+                                        <Icon icon="mdi:trending-up" width={34} height={34} />
                                     </span>
                                     <span className="font-bold text-2xl">92%</span>
                                     <span className="text-xs opacity-80">Employment Rate</span>

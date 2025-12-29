@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import React from "react";
 
 export default function VocationalHub() {
@@ -23,7 +24,7 @@ export default function VocationalHub() {
                             <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/20 transition-colors">
                                 <button className="h-20 w-20 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/50 group-hover:scale-110 transition-transform shadow-2xl">
                                     <span className="material-symbols-outlined text-4xl text-white">
-                                        play_arrow
+                                        <Icon icon="mdi:play-outline" width={44} height={44} />
                                     </span>
                                 </button>
                             </div>
@@ -44,7 +45,9 @@ export default function VocationalHub() {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
                             <div className="flex items-start gap-4">
                                 <div className="mt-1 p-2 rounded-lg bg-gray-800 text-primary">
-                                    <span className="material-symbols-outlined">computer</span>
+                                    <span className="material-symbols-outlined">
+                                        <Icon icon="mdi:computer" width={24} height={24} />
+                                    </span>
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-white">Advanced Labs</h4>
@@ -55,7 +58,9 @@ export default function VocationalHub() {
                             </div>
                             <div className="flex items-start gap-4">
                                 <div className="mt-1 p-2 rounded-lg bg-gray-800 text-primary">
-                                    <span className="material-symbols-outlined">groups</span>
+                                    <span className="material-symbols-outlined">
+                                        <Icon icon="mdi:account-group" width={24} height={24} />
+                                    </span>
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-white">Co-Working Space</h4>
@@ -72,7 +77,7 @@ export default function VocationalHub() {
                             >
                                 Download the Prospectus
                                 <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
-                                    arrow_forward
+                                    <Icon icon="mdi:arrow-right-thick" width={24} height={24} />
                                 </span>
                             </a>
                         </div>

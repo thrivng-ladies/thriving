@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Footer() {
@@ -6,9 +7,9 @@ export default function Footer() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
                     <div className="flex items-center gap-3">
-                        <div className="flex size-8 items-center justify-center rounded-lg bg-primary text-white">
+                        <div className="flex size-12 items-center justify-center rounded-lg bg-primary text-white">
                             <span className="material-symbols-outlined text-sm">
-                                volunteer_activism
+                                <Image src="/logo.png" width={34} height={34} alt="Logo" />
                             </span>
                         </div>
                         <span className="text-xl font-bold text-text-main dark:text-white">

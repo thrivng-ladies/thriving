@@ -68,7 +68,9 @@ export default function PillarsOfImpact() {
                                 href="#"
                             >
                                 Explore Workshops
-                                <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                <span className="material-symbols-outlined text-sm">
+                                    <Icon icon="mdi:arrow-forward" width={24} height={24} />
+                                </span>
                             </a>
                         </div>
                     </div>
