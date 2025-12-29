@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Thriving Lives Foundation</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#137fec",
+              "primary-dark": "#0b5db0",
+              "background-light": "#ffffff",
+              "background-off": "#f8fafc",
+              "background-dark": "#0f172a",
+              "text-main": "#1e293b",
+              "text-secondary": "#64748b",
+              "border-light": "#e2e8f0",
+              accent: "#f59e0b",
+            },
+            fontFamily: {
+              display: ["Lexend", "sans-serif"],
+            },
+            backgroundImage: {
+              "hero-gradient":
+                "linear-gradient(to right, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.6) 50%, rgba(15, 23, 42, 0.2) 100%)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+      .text-shadow {
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .clip-slant {
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      }
+      details > summary {
+        list-style: none;
+      }
+      details > summary::-webkit-details-marker {
+        display: none;
+      }
+      details[open] summary ~ * {
+        animation: sweep 0.3s ease-in-out;
+      }
+      @keyframes sweep {
+        0% {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-text-main dark:text-white transition-colors duration-200 antialiased selection:bg-primary selection:text-white"
+  >
+    <nav
+      class="fixed top-0 z-50 w-full transition-all duration-300 bg-background-dark/80 backdrop-blur-md border-b border-white/10"
+    >
+      <div
+        class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="flex size-10 items-center justify-center rounded-xl bg-primary text-white shadow-lg shadow-primary/20"
+          >
+            <span class="material-symbols-outlined">volunteer_activism</span>
+          </div>
+          <h1 class="text-xl font-bold tracking-tight text-white">
+            Thriving Lives
+          </h1>
+        </div>
+        <div class="hidden md:flex flex-1 justify-center gap-10">
+          <a
+            class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+            href="#"
+            >Our Mission</a
+          >
+          <a
+            class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+            href="#"
+            >Programs</a
+          >
+          <a
+            class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+            href="#"
+            >Impact Stories</a
+          >
+          <a
+            class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+            href="#"
+            >The Hub</a
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <button
+            class="hidden sm:flex h-10 items-center justify-center rounded-full bg-white px-6 text-sm font-bold text-primary shadow-lg hover:bg-gray-100 transition-all hover:scale-105 active:scale-95"
+          >
+            Partner with Us
+          </button>
+          <button class="md:hidden p-2 text-white">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="relative h-[90vh] min-h-[700px] w-full overflow-hidden flex items-center"
+    >
+      <div class="absolute inset-0 z-0">
+        <img
+          alt="Diverse students studying outdoors"
+          class="h-full w-full object-cover scale-105 animate-[pulse_10s_ease-in-out_infinite] transition-transform duration-[20s]"
+          data-alt="Group of diverse young students studying outdoors"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8Es22kjBiW0-lJxMHwSkwcU2pZLDNuRttea11osmu_GJuCJA4EtXoHhHuywvgtlXOkiGdYhj2whB9zzv8x6-3eYNDnpcwW2eKy0kUDiWSjFo3rvsSqRnKO5uQ_n2ESVfsXYplOghLk9iVj9_zynDt7ClcSjjjLJqJW1_XjBM46MSc34qLCKAeCVW2ZsTNXDO98M_GvTcildKOz0Hu1dQO3EJjYy4vzGR24GbwWajUt1CWegcM0dmepy7CV6OhcWZi-BrGQXKvnDo"
+          style="animation: none; transform: scale(1.05)"
+        />
+        <div class="absolute inset-0 bg-hero-gradient"></div>
+        <div
+          class="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[100px] animate-pulse"
+        ></div>
+      </div>
+      <div class="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+        <div class="max-w-3xl space-y-8">
+          <div
+            class="inline-flex items-center rounded-full border border-white/20 bg-white/10 backdrop-blur-sm px-4 py-1.5 text-sm font-medium text-white shadow-lg"
+          >
+            <span
+              class="flex h-2 w-2 rounded-full bg-accent mr-2 animate-pulse"
+            ></span>
+            Impact Report 2024 Released
+          </div>
+          <h1
+            class="text-5xl font-extrabold tracking-tight text-white sm:text-6xl md:text-7xl leading-[1.1] text-shadow"
+          >
+            Eliminating Barriers.<br />
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white"
+              >Empowering Futures.</span
+            >
+          </h1>
+          <p
+            class="max-w-xl text-lg text-gray-200 md:text-xl leading-relaxed font-light"
+          >
+            We bridge the gap between potential and opportunity, equipping girls
+            and youth with the tools for economic independence and lifelong
+            success.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <button
+              class="h-14 px-8 rounded-full bg-primary text-white text-base font-bold shadow-xl shadow-primary/30 hover:bg-primary-dark hover:-translate-y-1 transition-all flex items-center justify-center gap-2"
+            >
+              Make a Donation
+              <span class="material-symbols-outlined text-sm">favorite</span>
+            </button>
+            <button
+              class="h-14 px-8 rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-white text-base font-bold hover:bg-white/20 hover:-translate-y-1 transition-all flex items-center justify-center gap-2"
+            >
+              Watch Our Story
+              <span class="material-symbols-outlined text-sm">play_circle</span>
+            </button>
+          </div>
+          <div class="flex items-center gap-4 pt-8">
+            <div class="flex -space-x-4">
+              <img
+                alt="Supporter avatar"
+                class="h-12 w-12 rounded-full border-2 border-background-dark object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5rdzLDRb1CRlXHl52H0nRA5m6yvq1Y2HdRjb-ybiaH1hvHVIMMg28RoNddgcOix5RAONcOJOHOhEWr0EQ3mkw86EUB2HOZBAVvzFjKQeSYIi5fRafGDfHpWX4FPdb-Y65lut2_ZkNrTagBbvPefT6BurmkwvzF6AA9yyJ9ihE-kIBx78O6GFbg3f8tzz1PV6pbAzjAnbshmFlx7AvdK6-34mWsQjLbW2eGYdvmsCBJRDmrhajzvZXAX_jWhrbsp9YHQmRai5lQBI"
+              />
+              <img
+                alt="Supporter avatar"
+                class="h-12 w-12 rounded-full border-2 border-background-dark object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCDhnS6KPaw5gnKO0iY-kB57tHjt2vlb3sLqMy1Sh4eFndRKcwJC0bKWCBcM1hy_ESPkrimyxxcA1EU1EXYxHZel8z1pO3pslje8os3KoqAZmV3XQsZmVobwUQ-ls6He3Nc1ldQiarJx9VnVsjgAsihbXk21Q7aAPFN-6n-Pk_QtebPxuuX4vTWq0-9qlsfijamZMWNgeIj5yEu6YQxMLpCRDmnd5iJRdgd9wyfzCgGFiBtL_PhOvqWWbV8DjS6u1iQ5fLrgM0aEc"
+              />
+              <img
+                alt="Supporter avatar"
+                class="h-12 w-12 rounded-full border-2 border-background-dark object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCD_v5okTYn51FiWZPsKkwL2wIlIkza3B7aUAxgv_d_uqsEVI1QaGx60Dk17WuTTQZCn_Ribq6Z2Sk6YkYr_j1ECE19RUsgTYvgaSxSDvmS-CLH2f2mn8G5Kpl2Egfdn2nmEKizbxI_qiX-CuTqBZ7hvSOVg4tiUreTfuyGxJQBODU7-OXuDF8fsgpBCNrlAEOTV4_1RfyBteHCx1NNi2Fp4tukEGt2G28B1Lx-c5Xl3Ko-5liAjqj4Bp-lHkLg2eZzgUbOtXagog"
+              />
+            </div>
+            <div class="flex flex-col">
+              <div class="flex text-accent text-sm">
+                <span class="material-symbols-outlined text-[18px] fill"
+                  >star</span
+                >
+                <span class="material-symbols-outlined text-[18px] fill"
+                  >star</span
+                >
+                <span class="material-symbols-outlined text-[18px] fill"
+                  >star</span
+                >
+                <span class="material-symbols-outlined text-[18px] fill"
+                  >star</span
+                >
+                <span class="material-symbols-outlined text-[18px] fill"
+                  >star</span
+                >
+              </div>
+              <p class="text-sm text-gray-300 font-medium">
+                Trusted by
+                <span class="text-white font-bold">2,400+</span> partners
+                worldwide
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      class="relative z-20 -mt-24 sm:-mt-32 pb-24 px-4 sm:px-6 lg:px-8 pointer-events-none"
+    >
+      <div class="container mx-auto pointer-events-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="group bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-2xl shadow-black/5 hover:-translate-y-2 transition-transform duration-300 border-t-4 border-primary"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <div
+                class="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl text-primary"
+              >
+                <span class="material-symbols-outlined text-3xl">school</span>
+              </div>
+              <span
+                class="text-xs font-bold uppercase tracking-wider text-green-600 bg-green-100 dark:bg-green-900/30 dark:text-green-400 py-1 px-2 rounded-lg"
+                >+24% YoY</span
+              >
+            </div>
+            <div class="space-y-1">
+              <h3
+                class="text-4xl font-extrabold text-text-main dark:text-white"
+              >
+                5,000+
+              </h3>
+              <p class="text-text-secondary dark:text-gray-400 font-medium">
+                Girls Educated
+              </p>
+            </div>
+            <div
+              class="mt-6 w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2 overflow-hidden"
+            >
+              <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-2xl shadow-black/5 hover:-translate-y-2 transition-transform duration-300 border-t-4 border-accent"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <div
+                class="p-3 bg-amber-50 dark:bg-amber-900/30 rounded-xl text-accent"
+              >
+                <span class="material-symbols-outlined text-3xl"
+                  >diversity_3</span
+                >
+              </div>
+            </div>
+            <div class="space-y-1">
+              <h3
+                class="text-4xl font-extrabold text-text-main dark:text-white"
+              >
+                10
+              </h3>
+              <p class="text-text-secondary dark:text-gray-400 font-medium">
+                Communities Served
+              </p>
+            </div>
+            <div class="mt-6 flex -space-x-2">
+              <span
+                class="h-8 w-8 rounded-full bg-gray-200 border-2 border-white dark:border-gray-800"
+              ></span>
+              <span
+                class="h-8 w-8 rounded-full bg-gray-300 border-2 border-white dark:border-gray-800"
+              ></span>
+              <span
+                class="h-8 w-8 rounded-full bg-gray-400 border-2 border-white dark:border-gray-800"
+              ></span>
+              <span
+                class="h-8 w-8 rounded-full bg-gray-100 border-2 border-white dark:border-gray-800 flex items-center justify-center text-xs text-gray-500 font-bold"
+                >+7</span
+              >
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-2xl shadow-black/5 hover:-translate-y-2 transition-transform duration-300 border-t-4 border-pink-500"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <div
+                class="p-3 bg-pink-50 dark:bg-pink-900/30 rounded-xl text-pink-500"
+              >
+                <span class="material-symbols-outlined text-3xl"
+                  >volunteer_activism</span
+                >
+              </div>
+              <span
+                class="text-xs font-bold uppercase tracking-wider text-pink-600 bg-pink-100 dark:bg-pink-900/30 dark:text-pink-400 py-1 px-2 rounded-lg"
+                >Goal 20k</span
+              >
+            </div>
+            <div class="space-y-1">
+              <h3
+                class="text-4xl font-extrabold text-text-main dark:text-white"
+              >
+                15,000+
+              </h3>
+              <p class="text-text-secondary dark:text-gray-400 font-medium">
+                Lives Impacted
+              </p>
+            </div>
+            <div
+              class="mt-6 w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2 overflow-hidden"
+            >
+              <div
+                class="bg-pink-500 h-2 rounded-full"
+                style="width: 75%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section
+      class="py-12 bg-background-light dark:bg-background-dark overflow-hidden"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row gap-16 items-center">
+          <div class="w-full lg:w-1/2 space-y-8">
+            <h2
+              class="text-sm font-bold tracking-widest text-primary uppercase mb-2"
+            >
+              Our Core Mission
+            </h2>
+            <h3
+              class="text-4xl font-bold tracking-tight text-text-main dark:text-white sm:text-5xl leading-tight"
+            >
+              Bridging the gap between
+              <span class="relative inline-block">
+                <span class="relative z-10">potential</span>
+                <span
+                  class="absolute bottom-1 left-0 w-full h-3 bg-yellow-200 dark:bg-yellow-900/50 -z-0 rounded-sm transform -rotate-2"
+                ></span>
+              </span>
+              and opportunity.
+            </h3>
+            <p
+              class="text-lg text-text-secondary dark:text-gray-400 leading-relaxed"
+            >
+              We don't just provide aid; we build ecosystems of support. By
+              removing financial obstacles and providing mentorship, we enable
+              young women to rewrite their own stories and lift their entire
+              communities.
+            </p>
+            <div class="space-y-4 pt-4">
+              <div
+                class="flex items-center gap-4 p-4 rounded-xl bg-background-off dark:bg-gray-800/50 hover:bg-white hover:shadow-md transition-all duration-300 cursor-default border border-transparent hover:border-border-light"
+              >
+                <div
+                  class="flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400"
+                >
+                  <span class="material-symbols-outlined">menu_book</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-text-main dark:text-white">
+                    Educational Access
+                  </h4>
+                  <p class="text-sm text-text-secondary dark:text-gray-400">
+                    Full scholarships and material support.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-4 p-4 rounded-xl bg-background-off dark:bg-gray-800/50 hover:bg-white hover:shadow-md transition-all duration-300 cursor-default border border-transparent hover:border-border-light"
+              >
+                <div
+                  class="flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400"
+                >
+                  <span class="material-symbols-outlined">lightbulb</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-text-main dark:text-white">
+                    Economic Mobility
+                  </h4>
+                  <p class="text-sm text-text-secondary dark:text-gray-400">
+                    Vocational training and entrepreneurship.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-[80px]"
+            ></div>
+            <div class="relative grid grid-cols-2 gap-4">
+              <div class="space-y-4 mt-8">
+                <div
+                  class="aspect-[4/5] rounded-2xl overflow-hidden shadow-lg relative group"
+                >
+                  <img
+                    alt="Student portrait"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiqnoR0Cdo-3DFtNAuTEa13-DfylVKcm4Kfgvmobj6-OkhocX6VM22XkgYPNc18wV_x8IB8G6AMT235VnHmWckPFCOthiPN04HEyPSe3paGYGMdvlRHbqP74i8YWJGgPhEvY7xDcZPR5gcuSxoXyeZPsTzwnN4bAA8lOEpAZbKEuXN4vqIHRi_1ohK09KOZpIMFGmsRMmZcIMTozs2NlNe0S-dFivl7twKYyEi8cFqCPoW0UGH3V4KNDWyMIY0RzM2ikyOsc7_UEI"
+                  />
+                  <div
+                    class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent"
+                  >
+                    <p class="text-white font-bold text-sm">
+                      "I can dream now."
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="p-6 bg-primary rounded-2xl text-white shadow-lg flex flex-col justify-center items-center text-center"
+                >
+                  <span class="material-symbols-outlined text-4xl mb-2"
+                    >trending_up</span
+                  >
+                  <span class="font-bold text-2xl">92%</span>
+                  <span class="text-xs opacity-80">Employment Rate</span>
+                </div>
+              </div>
+              <div class="space-y-4">
+                <div
+                  class="p-6 bg-white dark:bg-gray-800 border border-border-light dark:border-gray-700 rounded-2xl shadow-lg"
+                >
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="h-3 w-3 rounded-full bg-red-500"></span>
+                    <span
+                      class="text-xs font-bold uppercase text-text-secondary"
+                      >Before Us</span
+                    >
+                  </div>
+                  <div
+                    class="w-full bg-gray-100 dark:bg-gray-700 h-2 rounded-full mb-4"
+                  >
+                    <div class="bg-red-500 h-2 rounded-full w-[20%]"></div>
+                  </div>
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="h-3 w-3 rounded-full bg-green-500"></span>
+                    <span
+                      class="text-xs font-bold uppercase text-text-secondary"
+                      >With Thriving Lives</span
+                    >
+                  </div>
+                  <div
+                    class="w-full bg-gray-100 dark:bg-gray-700 h-2 rounded-full"
+                  >
+                    <div class="bg-green-500 h-2 rounded-full w-[85%]"></div>
+                  </div>
+                  <p class="text-xs text-text-secondary mt-4">
+                    Graduation success comparison
+                  </p>
+                </div>
+                <div
+                  class="aspect-square rounded-2xl overflow-hidden shadow-lg relative group"
+                >
+                  <img
+                    alt="Classroom view"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd4PzoXK5S32T0Z9lYtWnJlJl5Bxd1Ap5BdHoCnBn6YYp4_z1xgzME5FO1EpCoTDMjLxHw_JRzHyJLUTGcKWIgAUzQK2rPRmWGsQa7bzw_G2AHef-Uao3PiMZmzeCFPSUxYu6KE9Q_Lp3rrwF1NJTLQvc-ngxcUniukcKx7oGOAwVILLj3xIEjlHJyNlgiS0cv6op0XlNqBx0SgSWzcTbvBmxK27ZdoB9Bd8DZxX_1R7o7yGS0_pc7RohK2-WCEizRFigXALPROH0"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 bg-background-off dark:bg-gray-900/50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <h2
+            class="text-3xl font-bold tracking-tight text-text-main dark:text-white sm:text-5xl mb-4"
+          >
+            Our Pillars of Impact
+          </h2>
+          <p class="text-lg text-text-secondary dark:text-gray-400">
+            Designed to create sustainable, long-term change.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[320px]">
+          <div
+            class="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-3xl bg-white dark:bg-gray-800 shadow-sm hover:shadow-2xl transition-all duration-500"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10"
+            ></div>
+            <img
+              alt="Students in classroom"
+              class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8Es22kjBiW0-lJxMHwSkwcU2pZLDNuRttea11osmu_GJuCJA4EtXoHhHuywvgtlXOkiGdYhj2whB9zzv8x6-3eYNDnpcwW2eKy0kUDiWSjFo3rvsSqRnKO5uQ_n2ESVfsXYplOghLk9iVj9_zynDt7ClcSjjjLJqJW1_XjBM46MSc34qLCKAeCVW2ZsTNXDO98M_GvTcildKOz0Hu1dQO3EJjYy4vzGR24GbwWajUt1CWegcM0dmepy7CV6OhcWZi-BrGQXKvnDo"
+            />
+            <div class="relative z-20 flex flex-col h-full justify-end p-8">
+              <div
+                class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+              >
+                <div
+                  class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-bold mb-4 border border-white/20"
+                >
+                  <span class="material-symbols-outlined text-sm">school</span>
+                  Core Program
+                </div>
+                <h3 class="text-3xl font-bold text-white mb-2">
+                  Educational Outreach
+                </h3>
+                <p
+                  class="text-gray-200 mb-6 max-w-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 h-0 group-hover:h-auto overflow-hidden"
+                >
+                  Providing scholarships and learning materials to ensure no
+                  child is left behind.
+                </p>
+                <button
+                  class="flex items-center gap-2 text-white font-bold group-hover:gap-4 transition-all"
+                >
+                  Learn More
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="md:col-span-2 relative overflow-hidden rounded-3xl bg-[#0f172a] shadow-sm hover:shadow-xl transition-all duration-500 group"
+          >
+            <div
+              class="absolute right-0 top-0 h-full w-2/3 opacity-40 mix-blend-overlay"
+            >
+              <img
+                alt="Woman laptop"
+                class="h-full w-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtZv3qPGDpA9YYJkBMmvhzCzoe93Vb0i2V6IQ-agDl5VHUz0EGFd1BVTFySceBroIIxXzWnjtcBBsVizj0REEUIYigIyFcEu3_EE0qiXtiTGqb-AnV4Rn9hmrJ-QCEUU4Vnc1AcukiJEtxwpSO-hc2BskqswCm8aQf0wWQuK0QExvmi-HhxQeW-YukDei0xXGZ0Dj7oqNYDL8zf30FMTDaWx9o044Izsu2ANgHE5-zkEZeO97Izo40hG5Hww3m2LZNZnUmnruAppA"
+              />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/80 to-transparent"
+            ></div>
+            <div class="relative z-10 p-8 h-full flex flex-col justify-center">
+              <div
+                class="h-12 w-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center mb-4"
+              >
+                <span class="material-symbols-outlined">code</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-2">
+                Digital Skills Transfer
+              </h3>
+              <p class="text-gray-400 text-sm max-w-xs mb-4">
+                Workshops in coding, digital literacy, and modern vocational
+                skills.
+              </p>
+              <a
+                class="text-blue-400 text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all"
+                href="#"
+                >Explore Workshops
+                <span class="material-symbols-outlined text-sm"
+                  >arrow_forward</span
+                ></a
+              >
+            </div>
+          </div>
+          <div
+            class="md:col-span-1 relative overflow-hidden rounded-3xl bg-primary shadow-sm hover:shadow-xl transition-all duration-500 p-8 flex flex-col justify-between text-white"
+          >
+            <span class="material-symbols-outlined text-5xl opacity-20"
+              >format_quote</span
+            >
+            <p class="font-medium text-lg leading-snug">
+              "The foundation gave me the confidence to become an engineer."
+            </p>
+            <div class="flex items-center gap-3 mt-4">
+              <div class="h-8 w-8 rounded-full bg-white/20 overflow-hidden">
+                <img
+                  class="h-full w-full object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiqnoR0Cdo-3DFtNAuTEa13-DfylVKcm4Kfgvmobj6-OkhocX6VM22XkgYPNc18wV_x8IB8G6AMT235VnHmWckPFCOthiPN04HEyPSe3paGYGMdvlRHbqP74i8YWJGgPhEvY7xDcZPR5gcuSxoXyeZPsTzwnN4bAA8lOEpAZbKEuXN4vqIHRi_1ohK09KOZpIMFGmsRMmZcIMTozs2NlNe0S-dFivl7twKYyEi8cFqCPoW0UGH3V4KNDWyMIY0RzM2ikyOsc7_UEI"
+                />
+              </div>
+              <span class="text-sm font-bold opacity-80">Amina K.</span>
+            </div>
+          </div>
+          <div
+            class="md:col-span-1 relative overflow-hidden rounded-3xl bg-white dark:bg-gray-800 shadow-sm hover:shadow-xl transition-all duration-500 group border border-border-light dark:border-gray-700"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 opacity-0 group-hover:opacity-100 transition-opacity z-10"
+            ></div>
+            <img
+              class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu9OMYAwx7lKTkAMh_XBgFX0y8Ylawehup-5ZOHpNAAVtDCWutgJe9ouPKlWkEq8YhKRtr_tQsjrn19-kECdhbgegaHFA6x7LweGf8rOWgshSoQUnKcVjwWA-xrybTYzNaRDLfWdHB4c3ERs8QBBK2WzPFFeWATaiAiXWO7dUzQX8TnNZEqYx9CRr-gU0dKAvgHyKVKZctV2rEbNV23B4fNrJzCpv4yLrcL7zgNOzxd_2DlvPVbjanRjpmrcsNc5LGnjCiYoHS8xM"
+            />
+            <div class="absolute bottom-0 left-0 p-6 z-20">
+              <div
+                class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm p-4 rounded-xl shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform"
+              >
+                <h4
+                  class="font-bold text-text-main dark:text-white flex items-center gap-2"
+                >
+                  <span
+                    class="h-2 w-2 rounded-full bg-green-500 animate-pulse"
+                  ></span>
+                  Future Project
+                </h4>
+                <p class="text-xs text-text-secondary dark:text-gray-400 mt-1">
+                  The Innovation Hub
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="relative py-24 bg-background-dark text-white overflow-hidden"
+    >
+      <div class="absolute inset-0 opacity-20">
+        <img
+          class="w-full h-full object-cover grayscale mix-blend-luminosity"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu9OMYAwx7lKTkAMh_XBgFX0y8Ylawehup-5ZOHpNAAVtDCWutgJe9ouPKlWkEq8YhKRtr_tQsjrn19-kECdhbgegaHFA6x7LweGf8rOWgshSoQUnKcVjwWA-xrybTYzNaRDLfWdHB4c3ERs8QBBK2WzPFFeWATaiAiXWO7dUzQX8TnNZEqYx9CRr-gU0dKAvgHyKVKZctV2rEbNV23B4fNrJzCpv4yLrcL7zgNOzxd_2DlvPVbjanRjpmrcsNc5LGnjCiYoHS8xM"
+        />
+      </div>
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-background-dark via-background-dark/95 to-background-dark/80"
+      ></div>
+      <div class="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="order-2 lg:order-1 relative group">
+            <div
+              class="absolute -inset-4 bg-gradient-to-r from-primary to-purple-600 rounded-2xl opacity-30 blur-lg group-hover:opacity-50 transition-opacity duration-500"
+            ></div>
+            <div
+              class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 aspect-video"
+            >
+              <img
+                alt="Workspace collaboration"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDulKdHtDyG-tXXuLPKntkGJXvo2yOV48FqicsoxSLyBv7-UjE_gW97TuDQGUfUnM3vhhpM2xvB5cfBSfJqBy3ybf2WKwdx7Ix-YkOiQkHvdPCwji7UFeMrPG_UF_p-xNoh3Nfb2uzg6hEN8pni9mVy5XI7963Ssrwl77hAIi1cpytAvxcLU9gdN-UBWWmQVJCKj49RKU57XA9ekziLVtZhBi7-14oq_N1eawUaYqWqXjE7qIE-1pMQmTsn8UR6G0rIaxEFaEX9UQ8"
+              />
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/20 transition-colors"
+              >
+                <button
+                  class="h-20 w-20 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/50 group-hover:scale-110 transition-transform shadow-2xl"
+                >
+                  <span class="material-symbols-outlined text-4xl text-white"
+                    >play_arrow</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2 space-y-8">
+            <div
+              class="inline-flex items-center gap-2 text-primary font-bold tracking-wider uppercase text-sm"
+            >
+              <span class="material-symbols-outlined">rocket_launch</span>
+              Coming 2025
+            </div>
+            <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
+              The Vocational Hub
+            </h2>
+            <p class="text-xl text-gray-400 font-light leading-relaxed">
+              A state-of-the-art facility designed to incubate the next
+              generation of female leaders in tech and business.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+              <div class="flex items-start gap-4">
+                <div class="mt-1 p-2 rounded-lg bg-gray-800 text-primary">
+                  <span class="material-symbols-outlined">computer</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white">Advanced Labs</h4>
+                  <p class="text-sm text-gray-400 mt-1">
+                    Equipped with modern hardware for coding and design.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="mt-1 p-2 rounded-lg bg-gray-800 text-primary">
+                  <span class="material-symbols-outlined">groups</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white">Co-Working Space</h4>
+                  <p class="text-sm text-gray-400 mt-1">
+                    Collaborative environments for startups and freelancers.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-8 border-t border-gray-800">
+              <a
+                class="inline-flex items-center text-white font-bold hover:text-primary transition-colors gap-2 group"
+                href="#"
+              >
+                Download the Prospectus
+                <span
+                  class="material-symbols-outlined transition-transform group-hover:translate-x-1"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-24 bg-background-off dark:bg-background-dark overflow-hidden"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end gap-6 mb-12"
+        >
+          <div class="max-w-2xl">
+            <h2
+              class="text-3xl font-bold tracking-tight text-text-main dark:text-white sm:text-4xl mb-4"
+            >
+              Voices of Partnership
+            </h2>
+            <p class="text-lg text-text-secondary dark:text-gray-400">
+              See why leading organizations choose to build the future with us.
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <button
+              class="h-12 w-12 rounded-full border border-border-light dark:border-gray-700 flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-text-secondary dark:text-gray-300"
+            >
+              <span class="material-symbols-outlined">arrow_back</span>
+            </button>
+            <button
+              class="h-12 w-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg hover:bg-primary-dark transition-colors"
+            >
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div
+            class="lg:col-span-7 relative group rounded-3xl overflow-hidden min-h-[500px] shadow-2xl"
+          >
+            <img
+              alt="Partner discussion"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-75"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8Es22kjBiW0-lJxMHwSkwcU2pZLDNuRttea11osmu_GJuCJA4EtXoHhHuywvgtlXOkiGdYhj2whB9zzv8x6-3eYNDnpcwW2eKy0kUDiWSjFo3rvsSqRnKO5uQ_n2ESVfsXYplOghLk9iVj9_zynDt7ClcSjjjLJqJW1_XjBM46MSc34qLCKAeCVW2ZsTNXDO98M_GvTcildKOz0Hu1dQO3EJjYy4vzGR24GbwWajUt1CWegcM0dmepy7CV6OhcWZi-BrGQXKvnDo"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"
+            ></div>
+            <div class="absolute top-8 left-8">
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-wider"
+              >
+                <span
+                  class="h-2 w-2 rounded-full bg-green-400 animate-pulse"
+                ></span>
+                Partner Spotlight
+              </div>
+            </div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <button
+                class="group/btn relative flex items-center justify-center h-20 w-20 bg-white/20 backdrop-blur-md border border-white/40 rounded-full transition-all hover:scale-110"
+              >
+                <span class="material-symbols-outlined text-4xl text-white ml-1"
+                  >play_arrow</span
+                >
+                <div
+                  class="absolute inset-0 rounded-full border border-white/40 animate-[ping_2s_ease-in-out_infinite]"
+                ></div>
+              </button>
+            </div>
+            <div class="absolute bottom-0 left-0 p-8 w-full">
+              <blockquote
+                class="text-2xl font-medium text-white leading-relaxed mb-6"
+              >
+                "Thriving Lives doesn't just fund projects; they build
+                sustainable ecosystems. The ROI in human capital is unlike
+                anything we've seen."
+              </blockquote>
+              <div class="flex items-center gap-4">
+                <img
+                  alt="Partner avatar"
+                  class="h-12 w-12 rounded-full border-2 border-white/30 object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5rdzLDRb1CRlXHl52H0nRA5m6yvq1Y2HdRjb-ybiaH1hvHVIMMg28RoNddgcOix5RAONcOJOHOhEWr0EQ3mkw86EUB2HOZBAVvzFjKQeSYIi5fRafGDfHpWX4FPdb-Y65lut2_ZkNrTagBbvPefT6BurmkwvzF6AA9yyJ9ihE-kIBx78O6GFbg3f8tzz1PV6pbAzjAnbshmFlx7AvdK6-34mWsQjLbW2eGYdvmsCBJRDmrhajzvZXAX_jWhrbsp9YHQmRai5lQBI"
+                />
+                <div>
+                  <div class="text-white font-bold">Elena Rodriguez</div>
+                  <div class="text-gray-300 text-sm">
+                    Director of CSR, TechGlobal Inc.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-5 flex flex-col gap-6 min-h-[500px]">
+            <div
+              class="flex-1 bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-sm border border-border-light dark:border-gray-700 hover:shadow-xl transition-shadow duration-300 flex flex-col justify-center"
+            >
+              <div class="flex text-accent mb-4">
+                <span class="material-symbols-outlined text-xl fill">star</span>
+                <span class="material-symbols-outlined text-xl fill">star</span>
+                <span class="material-symbols-outlined text-xl fill">star</span>
+                <span class="material-symbols-outlined text-xl fill">star</span>
+                <span class="material-symbols-outlined text-xl fill">star</span>
+              </div>
+              <p
+                class="text-text-main dark:text-gray-200 font-medium text-lg mb-6"
+              >
+                "The transparency and data-driven approach gave our board the
+                confidence to commit to a 5-year partnership."
+              </p>
+              <div class="flex items-center gap-3">
+                <img
+                  alt="Partner avatar"
+                  class="h-10 w-10 rounded-full bg-gray-200 object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCDhnS6KPaw5gnKO0iY-kB57tHjt2vlb3sLqMy1Sh4eFndRKcwJC0bKWCBcM1hy_ESPkrimyxxcA1EU1EXYxHZel8z1pO3pslje8os3KoqAZmV3XQsZmVobwUQ-ls6He3Nc1ldQiarJx9VnVsjgAsihbXk21Q7aAPFN-6n-Pk_QtebPxuuX4vTWq0-9qlsfijamZMWNgeIj5yEu6YQxMLpCRDmnd5iJRdgd9wyfzCgGFiBtL_PhOvqWWbV8DjS6u1iQ5fLrgM0aEc"
+                />
+                <div>
+                  <div class="text-sm font-bold text-text-main dark:text-white">
+                    James Chen
+                  </div>
+                  <div class="text-xs text-text-secondary dark:text-gray-500">
+                    VP, Future Edu Foundation
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex-1 bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-sm border border-border-light dark:border-gray-700 hover:shadow-xl transition-shadow duration-300 flex flex-col justify-center"
+            >
+              <div class="flex justify-between items-start mb-4">
+                <div
+                  class="p-2 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-primary"
+                >
+                  <span class="material-symbols-outlined text-2xl"
+                    >format_quote</span
+                  >
+                </div>
+              </div>
+              <p
+                class="text-text-main dark:text-gray-200 font-medium text-lg mb-6"
+              >
+                "We've seen real, measurable change in the communities we
+                support together. A truly transformative alliance."
+              </p>
+              <div class="flex items-center gap-3">
+                <img
+                  alt="Partner avatar"
+                  class="h-10 w-10 rounded-full bg-gray-200 object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCD_v5okTYn51FiWZPsKkwL2wIlIkza3B7aUAxgv_d_uqsEVI1QaGx60Dk17WuTTQZCn_Ribq6Z2Sk6YkYr_j1ECE19RUsgTYvgaSxSDvmS-CLH2f2mn8G5Kpl2Egfdn2nmEKizbxI_qiX-CuTqBZ7hvSOVg4tiUreTfuyGxJQBODU7-OXuDF8fsgpBCNrlAEOTV4_1RfyBteHCx1NNi2Fp4tukEGt2G28B1Lx-c5Xl3Ko-5liAjqj4Bp-lHkLg2eZzgUbOtXagog"
+                />
+                <div>
+                  <div class="text-sm font-bold text-text-main dark:text-white">
+                    Sarah O'Connor
+                  </div>
+                  <div class="text-xs text-text-secondary dark:text-gray-500">
+                    Head of Impact, Civic Trust
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-16 pt-8 border-t border-border-light dark:border-gray-800"
+        >
+          <p
+            class="text-center text-sm font-semibold text-text-secondary dark:text-gray-500 uppercase tracking-widest mb-8"
+          >
+            Proudly supported by
+          </p>
+          <div
+            class="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500"
+          >
+            <div
+              class="text-2xl font-black text-gray-400 dark:text-gray-600 font-serif"
+            >
+              VANGUARD
+            </div>
+            <div
+              class="text-2xl font-bold text-gray-400 dark:text-gray-600 tracking-tighter italic"
+            >
+              HorizonLabs
+            </div>
+            <div
+              class="text-2xl font-bold text-gray-400 dark:text-gray-600 flex items-center gap-1"
+            >
+              <span class="material-symbols-outlined">circle</span>CircleGroup
+            </div>
+            <div
+              class="text-2xl font-bold text-gray-400 dark:text-gray-600 font-mono"
+            >
+              NEXT_STEP
+            </div>
+            <div
+              class="text-2xl font-serif font-bold text-gray-400 dark:text-gray-600 italic"
+            >
+              Foundation.io
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-24 bg-white dark:bg-gray-900 border-t border-border-light dark:border-gray-800"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <h2
+            class="text-3xl font-bold tracking-tight text-text-main dark:text-white sm:text-4xl mb-4"
+          >
+            Frequently Asked Questions
+          </h2>
+          <p class="text-lg text-text-secondary dark:text-gray-400">
+            Find answers to common questions about our mission and how you can
+            get involved.
+          </p>
+        </div>
+        <div class="max-w-3xl mx-auto space-y-4">
+          <details
+            class="group bg-background-off dark:bg-gray-800/50 rounded-2xl overflow-hidden border border-border-light dark:border-gray-700 open:border-primary/50 dark:open:border-primary/50 transition-colors duration-300"
+          >
+            <summary
+              class="flex items-center justify-between p-6 cursor-pointer select-none"
+            >
+              <h3 class="text-lg font-bold text-text-main dark:text-white pr-8">
+                How does the Thriving Lives Foundation allocate donations?
+              </h3>
+              <span
+                class="material-symbols-outlined text-text-secondary dark:text-gray-400 transition-transform duration-300 group-open:rotate-180 group-open:text-primary"
+                >expand_more</span
+              >
+            </summary>
+            <div class="px-6 pb-6 text-text-secondary dark:text-gray-300">
+              <p class="leading-relaxed">
+                We pride ourselves on transparency. 85% of all donations go
+                directly to our educational and vocational programs, including
+                scholarships, materials, and training workshops. The remaining
+                15% covers administrative costs and fundraising efforts to
+                ensure our foundation's sustainability.
+              </p>
+            </div>
+          </details>
+          <details
+            class="group bg-background-off dark:bg-gray-800/50 rounded-2xl overflow-hidden border border-border-light dark:border-gray-700 open:border-primary/50 dark:open:border-primary/50 transition-colors duration-300"
+          >
+            <summary
+              class="flex items-center justify-between p-6 cursor-pointer select-none"
+            >
+              <h3 class="text-lg font-bold text-text-main dark:text-white pr-8">
+                Can I volunteer or intern with the foundation?
+              </h3>
+              <span
+                class="material-symbols-outlined text-text-secondary dark:text-gray-400 transition-transform duration-300 group-open:rotate-180 group-open:text-primary"
+                >expand_more</span
+              >
+            </summary>
+            <div class="px-6 pb-6 text-text-secondary dark:text-gray-300">
+              <p class="leading-relaxed">
+                Yes! We welcome passionate individuals who want to contribute
+                their time and skills. We offer remote and on-site volunteer
+                opportunities, as well as seasonal internships for students.
+                Please visit our 'Get Involved' page to view current openings
+                and submit an application.
+              </p>
+            </div>
+          </details>
+          <details
+            class="group bg-background-off dark:bg-gray-800/50 rounded-2xl overflow-hidden border border-border-light dark:border-gray-700 open:border-primary/50 dark:open:border-primary/50 transition-colors duration-300"
+          >
+            <summary
+              class="flex items-center justify-between p-6 cursor-pointer select-none"
+            >
+              <h3 class="text-lg font-bold text-text-main dark:text-white pr-8">
+                What specific programs do you offer for young women?
+              </h3>
+              <span
+                class="material-symbols-outlined text-text-secondary dark:text-gray-400 transition-transform duration-300 group-open:rotate-180 group-open:text-primary"
+                >expand_more</span
+              >
+            </summary>
+            <div class="px-6 pb-6 text-text-secondary dark:text-gray-300">
+              <p class="leading-relaxed">
+                Our core programs focus on two pillars: Educational Access and
+                Economic Mobility. This includes full tuition scholarships for
+                secondary and higher education, digital literacy bootcamps, and
+                mentorship programs that pair young women with industry
+                professionals in STEM and business sectors.
+              </p>
+            </div>
+          </details>
+          <details
+            class="group bg-background-off dark:bg-gray-800/50 rounded-2xl overflow-hidden border border-border-light dark:border-gray-700 open:border-primary/50 dark:open:border-primary/50 transition-colors duration-300"
+          >
+            <summary
+              class="flex items-center justify-between p-6 cursor-pointer select-none"
+            >
+              <h3 class="text-lg font-bold text-text-main dark:text-white pr-8">
+                How can my company partner with Thriving Lives?
+              </h3>
+              <span
+                class="material-symbols-outlined text-text-secondary dark:text-gray-400 transition-transform duration-300 group-open:rotate-180 group-open:text-primary"
+                >expand_more</span
+              >
+            </summary>
+            <div class="px-6 pb-6 text-text-secondary dark:text-gray-300">
+              <p class="leading-relaxed">
+                We offer several partnership tiers for organizations, ranging
+                from sponsoring specific cohorts of students to funding
+                infrastructure projects like our new Vocational Hub. Partners
+                receive detailed impact reports and opportunities for employee
+                engagement. Contact our partnerships team to discuss a tailored
+                collaboration.
+              </p>
+            </div>
+          </details>
+          <details
+            class="group bg-background-off dark:bg-gray-800/50 rounded-2xl overflow-hidden border border-border-light dark:border-gray-700 open:border-primary/50 dark:open:border-primary/50 transition-colors duration-300"
+          >
+            <summary
+              class="flex items-center justify-between p-6 cursor-pointer select-none"
+            >
+              <h3 class="text-lg font-bold text-text-main dark:text-white pr-8">
+                Is my donation tax-deductible?
+              </h3>
+              <span
+                class="material-symbols-outlined text-text-secondary dark:text-gray-400 transition-transform duration-300 group-open:rotate-180 group-open:text-primary"
+                >expand_more</span
+              >
+            </summary>
+            <div class="px-6 pb-6 text-text-secondary dark:text-gray-300">
+              <p class="leading-relaxed">
+                Thriving Lives Foundation Limited is a registered non-profit
+                organization. Donations are tax-deductible to the extent allowed
+                by law in your jurisdiction. We will provide an official tax
+                receipt for all contributions over $20 via email immediately
+                after your donation is processed.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-24 bg-background-off dark:bg-background-dark border-t border-border-light dark:border-gray-800"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="relative overflow-hidden rounded-3xl bg-white dark:bg-gray-800 shadow-2xl shadow-black/5 border border-border-light dark:border-gray-700 p-8 md:p-16"
+        >
+          <div
+            class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-full blur-3xl opacity-60 pointer-events-none"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-gradient-to-tr from-amber-50 to-amber-100 dark:from-amber-900/20 dark:to-amber-800/20 rounded-full blur-3xl opacity-60 pointer-events-none"
+          ></div>
+          <div
+            class="relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-24"
+          >
+            <div class="lg:w-1/2 text-center lg:text-left space-y-6">
+              <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider"
+              >
+                <span class="material-symbols-outlined text-sm">mail</span>
+                Newsletter
+              </div>
+              <h2
+                class="text-3xl font-bold tracking-tight text-text-main dark:text-white sm:text-4xl lg:text-5xl"
+              >
+                Stay connected with our mission.
+              </h2>
+              <p
+                class="text-lg text-text-secondary dark:text-gray-400 leading-relaxed"
+              >
+                Join over 15,000 supporters receiving monthly updates on our
+                impact, field stories, and upcoming events. No spam, just hope.
+              </p>
+              <div
+                class="flex items-center justify-center lg:justify-start gap-8 pt-2"
+              >
+                <div class="flex -space-x-3">
+                  <img
+                    alt=""
+                    class="inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-gray-800 object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5rdzLDRb1CRlXHl52H0nRA5m6yvq1Y2HdRjb-ybiaH1hvHVIMMg28RoNddgcOix5RAONcOJOHOhEWr0EQ3mkw86EUB2HOZBAVvzFjKQeSYIi5fRafGDfHpWX4FPdb-Y65lut2_ZkNrTagBbvPefT6BurmkwvzF6AA9yyJ9ihE-kIBx78O6GFbg3f8tzz1PV6pbAzjAnbshmFlx7AvdK6-34mWsQjLbW2eGYdvmsCBJRDmrhajzvZXAX_jWhrbsp9YHQmRai5lQBI"
+                  />
+                  <img
+                    alt=""
+                    class="inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-gray-800 object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCDhnS6KPaw5gnKO0iY-kB57tHjt2vlb3sLqMy1Sh4eFndRKcwJC0bKWCBcM1hy_ESPkrimyxxcA1EU1EXYxHZel8z1pO3pslje8os3KoqAZmV3XQsZmVobwUQ-ls6He3Nc1ldQiarJx9VnVsjgAsihbXk21Q7aAPFN-6n-Pk_QtebPxuuX4vTWq0-9qlsfijamZMWNgeIj5yEu6YQxMLpCRDmnd5iJRdgd9wyfzCgGFiBtL_PhOvqWWbV8DjS6u1iQ5fLrgM0aEc"
+                  />
+                  <img
+                    alt=""
+                    class="inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-gray-800 object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCD_v5okTYn51FiWZPsKkwL2wIlIkza3B7aUAxgv_d_uqsEVI1QaGx60Dk17WuTTQZCn_Ribq6Z2Sk6YkYr_j1ECE19RUsgTYvgaSxSDvmS-CLH2f2mn8G5Kpl2Egfdn2nmEKizbxI_qiX-CuTqBZ7hvSOVg4tiUreTfuyGxJQBODU7-OXuDF8fsgpBCNrlAEOTV4_1RfyBteHCx1NNi2Fp4tukEGt2G28B1Lx-c5Xl3Ko-5liAjqj4Bp-lHkLg2eZzgUbOtXagog"
+                  />
+                  <div
+                    class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 ring-2 ring-white dark:bg-gray-700 dark:ring-gray-800 text-xs font-bold text-gray-500 dark:text-gray-300"
+                  >
+                    +2k
+                  </div>
+                </div>
+                <div
+                  class="text-sm font-medium text-text-secondary dark:text-gray-400"
+                >
+                  Joined this month
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/2 w-full">
+              <form class="flex flex-col sm:flex-row gap-4 w-full">
+                <div class="flex-grow">
+                  <label class="sr-only" for="email">Email address</label>
+                  <input
+                    class="block w-full rounded-full border-0 px-6 py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-lg dark:bg-gray-900/50 dark:text-white dark:ring-gray-700 dark:focus:ring-primary transition-all"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required=""
+                    type="email"
+                  />
+                </div>
+                <button
+                  class="flex-none rounded-full bg-primary px-8 py-4 text-lg font-bold text-white shadow-xl hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:scale-105 active:scale-95 transition-all duration-200"
+                  type="submit"
+                >
+                  Subscribe
+                </button>
+              </form>
+              <p
+                class="mt-6 text-sm text-center lg:text-left text-text-secondary dark:text-gray-500"
+              >
+                By subscribing, you agree to our
+                <a
+                  class="font-semibold text-primary hover:text-primary-dark underline decoration-primary/30 underline-offset-4"
+                  href="#"
+                  >Privacy Policy</a
+                >. We respect your data.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="relative py-32 overflow-hidden flex items-center justify-center"
+    >
+      <div class="absolute inset-0 bg-primary">
+        <div
+          class="absolute inset-0 opacity-10"
+          style="
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA7ERaDqzzHVAiC3XuD6voiFDx3qgjRM2ISE3PRRHubhWC5060fSBTzulNLdlKQuC_F5cPsrV-A5TBQS9f6NADPy7Eg4lpCnGtHahe7oHRD9m23DuHgromXPTOYVx67iAX1tE-eLcJEanEwy1QiOJs4R9tTmn8zYdY9D2dJJNDFZO77ugSUYUJ1hB3VjS6Ecd6z-x7NH0pNNfT4tif_42j5CKyF9RNS-XaR_vOQgFuZKVBcsiN1J46_Li0wFyF1TC5g6fVY7NDDwsk');
+          "
+        ></div>
+        <div
+          class="absolute top-0 right-0 w-[50vw] h-full bg-gradient-to-l from-blue-400/20 to-transparent skew-x-12"
+        ></div>
+      </div>
+      <div class="container relative z-10 mx-auto px-4 text-center">
+        <h2
+          class="text-4xl md:text-6xl font-black text-white mb-8 tracking-tight drop-shadow-md"
+        >
+          Be the catalyst for change.
+        </h2>
+        <p class="text-xl text-blue-100 max-w-2xl mx-auto mb-12 font-light">
+          Join a global movement dedicated to unlocking human potential. Your
+          partnership builds schools, trains leaders, and transforms lives.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <button
+            class="h-16 px-10 rounded-full bg-white text-primary text-lg font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+          >
+            Donate Now
+          </button>
+          <button
+            class="h-16 px-10 rounded-full bg-transparent border-2 border-white text-white text-lg font-bold hover:bg-white/10 transition-all duration-300"
+          >
+            Become a Partner
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-background-light dark:bg-background-dark border-t border-border-light dark:border-gray-800 pt-16 pb-8"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12"
+        >
+          <div class="flex items-center gap-3">
+            <div
+              class="flex size-8 items-center justify-center rounded-lg bg-primary text-white"
+            >
+              <span class="material-symbols-outlined text-sm"
+                >volunteer_activism</span
+              >
+            </div>
+            <span class="text-xl font-bold text-text-main dark:text-white"
+              >Thriving Lives</span
+            >
+          </div>
+          <div class="flex gap-8">
+            <a
+              class="text-text-secondary hover:text-primary dark:text-gray-400 transition-colors"
+              href="#"
+              >About</a
+            >
+            <a
+              class="text-text-secondary hover:text-primary dark:text-gray-400 transition-colors"
+              href="#"
+              >Programs</a
+            >
+            <a
+              class="text-text-secondary hover:text-primary dark:text-gray-400 transition-colors"
+              href="#"
+              >Contact</a
+            >
+            <a
+              class="text-text-secondary hover:text-primary dark:text-gray-400 transition-colors"
+              href="#"
+              >Donate</a
+            >
+          </div>
+          <div class="flex gap-4">
+            <a
+              class="text-gray-400 hover:text-primary transition-colors"
+              href="#"
+              ><span class="sr-only">Twitter</span
+              ><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                ></path></svg
+            ></a>
+            <a
+              class="text-gray-400 hover:text-primary transition-colors"
+              href="#"
+              ><span class="sr-only">LinkedIn</span
+              ><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+        <div
+          class="border-t border-border-light dark:border-gray-800 pt-8 text-center text-xs text-text-secondary dark:text-gray-500"
+        >
+          <p>© 2024 Thriving Lives Foundation Limited. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
