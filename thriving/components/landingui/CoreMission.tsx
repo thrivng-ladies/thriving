@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import React from "react";
 
 export default function CoreMission() {
@@ -26,7 +27,9 @@ export default function CoreMission() {
                         <div className="space-y-4 pt-4">
                             <div className="flex items-center gap-4 p-4 rounded-xl bg-background-off dark:bg-gray-800/50 hover:bg-white hover:shadow-md transition-all duration-300 cursor-default border border-transparent hover:border-border-light">
                                 <div className="flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400">
-                                    <span className="material-symbols-outlined">menu_book</span>
+                                    <span className="material-symbols-outlined">
+                                        <Icon icon="mdi:book-open-variant" width={24} height={24} />
+                                    </span>
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-text-main dark:text-white">
@@ -39,7 +42,9 @@ export default function CoreMission() {
                             </div>
                             <div className="flex items-center gap-4 p-4 rounded-xl bg-background-off dark:bg-gray-800/50 hover:bg-white hover:shadow-md transition-all duration-300 cursor-default border border-transparent hover:border-border-light">
                                 <div className="flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400">
-                                    <span className="material-symbols-outlined">lightbulb</span>
+                                    <span className="material-symbols-outlined">
+                                        <Icon icon="mdi:lightbulb" width={24} height={24} />
+                                    </span>
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-text-main dark:text-white">

@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import React from "react";
 
 export default function PillarsOfImpact() {
@@ -51,7 +52,9 @@ export default function PillarsOfImpact() {
                         <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/80 to-transparent"></div>
                         <div className="relative z-10 p-8 h-full flex flex-col justify-center">
                             <div className="h-12 w-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center mb-4">
-                                <span className="material-symbols-outlined">code</span>
+                                <span className="material-symbols-outlined">
+                                    <Icon icon="mdi:code-not-equal-variant" width={44} height={44} />
+                                </span>
                             </div>
                             <h3 className="text-2xl font-bold text-white mb-2">
                                 Digital Skills Transfer
@@ -71,7 +74,7 @@ export default function PillarsOfImpact() {
                     </div>
                     <div className="md:col-span-1 relative overflow-hidden rounded-3xl bg-primary shadow-sm hover:shadow-xl transition-all duration-500 p-8 flex flex-col justify-between text-white">
                         <span className="material-symbols-outlined text-5xl opacity-20">
-                            format_quote
+                            <Icon icon="mdi:format-quote-close" width={54} height={54} />
                         </span>
                         <p className="font-medium text-lg leading-snug">
                             "The foundation gave me the confidence to become an engineer."
