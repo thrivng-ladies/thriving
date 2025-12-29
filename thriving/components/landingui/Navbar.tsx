@@ -3,10 +3,15 @@
 import * as React from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
-import { Menu, Heart, PlayCircle, Moon, Sun } from "lucide-react";
+import { Menu, X, Heart, PlayCircle, Moon, Sun } from "lucide-react";
 
 export default function Navbar() {
     const { theme, setTheme } = useTheme();
+    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
 
     return (
         <nav className="fixed top-0 z-50 w-full transition-all duration-300 bg-background-dark/80 backdrop-blur-md border-b border-white/10">
@@ -57,8 +62,53 @@ export default function Navbar() {
                     <button className="hidden sm:flex h-10 items-center justify-center rounded-full bg-white px-6 text-sm font-bold text-primary shadow-lg hover:bg-gray-100 transition-all hover:scale-105 active:scale-95">
                         Partner with Us
                     </button>
-                    <button className="md:hidden p-2 text-white">
-                        <Menu className="h-6 w-6" />
+                    <button
+                        className="md:hidden p-2 text-white hover:bg-white/10 rounded-lg transition-colors relative h-10 w-10 flex items-center justify-center"
+                        onClick={toggleMenu}
+                    >
+                        <Menu className={`h-6 w-6 transition-all duration-300 absolute ${isMenuOpen ? 'rotate-90 scale-0 opacity-0' : 'rotate-0 scale-100 opacity-100'}`} />
+                        <X className={`h-6 w-6 transition-all duration-300 absolute ${isMenuOpen ? 'rotate-0 scale-100 opacity-100' : '-rotate-90 scale-0 opacity-0'}`} />
+                    </button>
+                </div>
+            </div>
+
+            {/* Mobile Menu Overlay */}
+            <div
+                className={`md:hidden fixed inset-0 z-40 bg-background-dark/95 backdrop-blur-xl transition-transform duration-300 ease-in-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+                    }`}
+                style={{ top: "80px" }} // Height of Navbar
+            >
+                <div className="flex flex-col items-center justify-center h-[calc(100vh-80px)] space-y-8 p-8">
+                    <a
+                        className="text-2xl font-medium text-white hover:text-primary transition-colors"
+                        href="#"
+                        onClick={toggleMenu}
+                    >
+                        Our Mission
+                    </a>
+                    <a
+                        className="text-2xl font-medium text-white hover:text-primary transition-colors"
+                        href="#"
+                        onClick={toggleMenu}
+                    >
+                        Programs
+                    </a>
+                    <a
+                        className="text-2xl font-medium text-white hover:text-primary transition-colors"
+                        href="#"
+                        onClick={toggleMenu}
+                    >
+                        Impact Stories
+                    </a>
+                    <a
+                        className="text-2xl font-medium text-white hover:text-primary transition-colors"
+                        href="#"
+                        onClick={toggleMenu}
+                    >
+                        The Hub
+                    </a>
+                    <button className="h-12 w-full max-w-xs items-center justify-center rounded-xl bg-white text-lg font-bold text-primary shadow-lg hover:bg-gray-100 transition-all active:scale-95">
+                        Partner with Us
                     </button>
                 </div>
             </div>
