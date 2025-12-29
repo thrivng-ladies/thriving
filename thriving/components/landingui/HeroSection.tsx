@@ -1,6 +1,10 @@
-import React from "react";
+"use client";
+import { Icon } from "@iconify/react";
+import React, { useState } from "react";
 
 export default function HeroSection() {
+    const [isVideoOpen, setIsVideoOpen] = useState(false);
+
     return (
         <section className="relative h-[90vh] min-h-[700px] w-full overflow-hidden flex items-center">
             <div className="absolute inset-0 z-0">
@@ -34,11 +38,18 @@ export default function HeroSection() {
                     <div className="flex flex-col sm:flex-row gap-4 pt-4">
                         <button className="h-14 px-8 rounded-full bg-primary text-white text-base font-bold shadow-xl shadow-primary/30 hover:bg-primary-dark hover:-translate-y-1 transition-all flex items-center justify-center gap-2">
                             Make a Donation
-                            <span className="material-symbols-outlined text-sm">favorite</span>
+                            <span className="material-symbols-outlined text-sm">
+                                <Icon icon="mdi:donation-outline" width={24} height={24} />
+                            </span>
                         </button>
-                        <button className="h-14 px-8 rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-white text-base font-bold hover:bg-white/20 hover:-translate-y-1 transition-all flex items-center justify-center gap-2">
+                        <button
+                            onClick={() => setIsVideoOpen(true)}
+                            className="h-14 px-8 rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-white text-base font-bold hover:bg-white/20 hover:-translate-y-1 transition-all flex items-center justify-center gap-2"
+                        >
                             Watch Our Story
-                            <span className="material-symbols-outlined text-sm">play_circle</span>
+                            <span className="material-symbols-outlined text-sm animate-[pulse_1.5s_ease-in-out_infinite]">
+                                <Icon icon="mdi:play-circle-outline" width={24} height={24} />
+                            </span>
                         </button>
                     </div>
                     <div className="flex items-center gap-4 pt-8">
@@ -74,6 +85,28 @@ export default function HeroSection() {
                     </div>
                 </div>
             </div>
+
+            {/* Video Modal */}
+            {isVideoOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm animate-in fade-in duration-200">
+                    <div className="relative w-full max-w-4xl aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10 animate-in zoom-in-95 duration-200">
+                        <button
+                            onClick={() => setIsVideoOpen(false)}
+                            className="absolute top-4 right-4 text-white hover:text-primary transition-colors z-10 p-2 bg-black/50 hover:bg-black/70 rounded-full backdrop-blur-sm"
+                            aria-label="Close video"
+                        >
+                            <Icon icon="mdi:close" width={24} height={24} />
+                        </button>
+                        <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/LXb3EKWsInQ?autoplay=1"
+                            title="Thriving Story"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
+            )}
         </section>
     );
 }
