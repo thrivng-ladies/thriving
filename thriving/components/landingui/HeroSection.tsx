@@ -12,7 +12,7 @@ export default function HeroSection() {
                     alt="Diverse students studying outdoors"
                     className="h-full w-full object-cover scale-105 animate-[pulse_10s_ease-in-out_infinite] transition-transform duration-[20s]"
                     data-alt="Group of diverse young students studying outdoors"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8Es22kjBiW0-lJxMHwSkwcU2pZLDNuRttea11osmu_GJuCJA4EtXoHhHuywvgtlXOkiGdYhj2whB9zzv8x6-3eYNDnpcwW2eKy0kUDiWSjFo3rvsSqRnKO5uQ_n2ESVfsXYplOghLk9iVj9_zynDt7ClcSjjjLJqJW1_XjBM46MSc34qLCKAeCVW2ZsTNXDO98M_GvTcildKOz0Hu1dQO3EJjYy4vzGR24GbwWajUt1CWegcM0dmepy7CV6OhcWZi-BrGQXKvnDo"
+                    src="/image.png"
                     style={{ animation: "none", transform: "scale(1.05)" }}
                 />
                 <div className="absolute inset-0 bg-hero-gradient"></div>
