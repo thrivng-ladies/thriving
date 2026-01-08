@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -17,12 +18,12 @@ export default function Footer() {
                         </span>
                     </div>
                     <div className="flex gap-8">
-                        <a
+                        <Link
                             className="text-text-secondary hover:text-primary dark:text-gray-400 transition-colors"
-                            href="#"
+                            href="/about"
                         >
                             About
-                        </a>
+                        </Link>
                         <a
                             className="text-text-secondary hover:text-primary dark:text-gray-400 transition-colors"
                             href="#"

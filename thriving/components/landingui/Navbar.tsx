@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useTheme } from "next-themes";
 import { Menu, X, Heart, PlayCircle, Moon, Sun } from "lucide-react";
 
@@ -16,33 +17,33 @@ export default function Navbar() {
     return (
         <nav className="fixed top-0 z-50 w-full transition-all duration-300 bg-background-dark/80 backdrop-blur-md border-b border-white/10">
             <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center gap-3">
+                <Link href="/" className="flex items-center gap-3">
                     <div className="flex size-10 items-center justify-center rounded-xl bg-primary text-white shadow-lg shadow-primary/20">
                         <Image src="/logo.png" alt="logo" width={24} height={24} />
                     </div>
                     <h1 className="text-xl font-bold tracking-tight text-white">
                         Thriving Lives
                     </h1>
-                </div>
+                </Link>
                 <div className="hidden md:flex flex-1 justify-center gap-10">
-                    <a
+                    <Link
                         className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-                        href="#"
+                        href="/"
                     >
-                        Our Mission
-                    </a>
-                    <a
+                        Home
+                    </Link>
+                    <Link
                         className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-                        href="#"
+                        href="/about"
                     >
-                        Programs
-                    </a>
-                    <a
+                        About
+                    </Link>
+                    <Link
                         className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-                        href="#"
+                        href="/contact"
                     >
-                        Impact Stories
-                    </a>
+                        Contact
+                    </Link>
                     <a
                         className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
                         href="#"
@@ -79,27 +80,27 @@ export default function Navbar() {
                 style={{ top: "80px" }} // Height of Navbar
             >
                 <div className="flex flex-col items-center justify-center h-[calc(100vh-80px)] space-y-8 p-8">
-                    <a
+                    <Link
                         className="text-2xl font-medium text-white hover:text-primary transition-colors"
-                        href="#"
+                        href="/"
                         onClick={toggleMenu}
                     >
-                        Our Mission
-                    </a>
-                    <a
+                        Home
+                    </Link>
+                    <Link
                         className="text-2xl font-medium text-white hover:text-primary transition-colors"
-                        href="#"
+                        href="/about"
                         onClick={toggleMenu}
                     >
-                        Programs
-                    </a>
-                    <a
+                        About
+                    </Link>
+                    <Link
                         className="text-2xl font-medium text-white hover:text-primary transition-colors"
-                        href="#"
+                        href="/contact"
                         onClick={toggleMenu}
                     >
-                        Impact Stories
-                    </a>
+                        Contact
+                    </Link>
                     <a
                         className="text-2xl font-medium text-white hover:text-primary transition-colors"
                         href="#"
